@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.study.bonnie.car.ConnectionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/IPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="62dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/portTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/IPTextView"
+        android:layout_alignStart="@+id/IPTextView"
+        android:layout_below="@+id/IPTextView"
+        android:layout_marginTop="31dp"
+        android:text="port"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/IPEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="enter server IP"
+        android:inputType="text"
+        android:layout_alignBaseline="@+id/IPTextView"
+        android:layout_alignBottom="@+id/IPTextView"
+        android:layout_toRightOf="@+id/portTextView"
+        android:layout_toEndOf="@+id/portTextView"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <EditText
+        android:id="@+id/portEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="3333"
+        android:layout_alignBaseline="@+id/portTextView"
+        android:layout_alignBottom="@+id/portTextView"
+        android:layout_alignLeft="@+id/IPEditText"
+        android:layout_alignStart="@+id/IPEditText" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="OK"
+        android:layout_below="@+id/portEditText"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

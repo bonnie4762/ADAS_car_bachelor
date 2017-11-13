@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.study.bonnie.car.ControllerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.study.bonnie.car.CameraView
+        android:id="@+id/cameraView"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speedEditText"
+        android:layout_alignLeft="@+id/speedTextView"
+        android:layout_alignStart="@+id/speedTextView"
+        android:id="@+id/angleTextView"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/angleEditText"
+        android:hint="0"
+        android:layout_alignBaseline="@+id/angleTextView"
+        android:layout_alignBottom="@+id/angleTextView"
+        android:layout_alignLeft="@+id/speedEditText"
+        android:layout_alignStart="@+id/speedEditText"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/holo_red_dark"
+        android:selectAllOnFocus="false"
+        android:autoLink="none"
+        android:clickable="false"
+        android:textColorLink="@android:color/background_light" />
+
+
+    <Switch
+        android:text="camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CameraSwitch"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignTop="@+id/speedEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="42dp"
+        android:id="@+id/speedTextView"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/cameraView"
+        android:layout_alignStart="@+id/cameraView" />
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/angleSeekBar"
+        android:max = "180"
+        android:progress="90"
+        android:layout_marginBottom="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:theme="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_marginLeft="40dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max = "180"
+        android:progress="90"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/speedSeekBar"
+        android:layout_above="@+id/angleSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:text="speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/speedSeekBar"
+        android:layout_toLeftOf="@+id/angleTextView"
+        android:layout_toStartOf="@+id/angleTextView" />
+
+    <TextView
+        android:text="angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/speedSeekBar"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/speedEditText"
+        android:hint="0"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/holo_red_dark"
+        android:textColorLink="@android:color/background_light"
+        android:layout_alignBaseline="@+id/speedTextView"
+        android:layout_alignBottom="@+id/speedTextView"
+        android:layout_toRightOf="@+id/speedTextView"
+        android:layout_toEndOf="@+id/speedTextView" />
+
+
+</RelativeLayout>
